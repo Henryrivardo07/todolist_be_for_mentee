@@ -10,7 +10,7 @@ const options = {
       description:
         "TodoList REST API with per-user scoping (Express + Prisma + Postgres)",
     },
-    servers: [{ url: process.env.SWAGGER_BASE_URL || "http://localhost:8080" }],
+    servers: [{ url: "/" }],
     components: {
       securitySchemes: {
         bearerAuth: { type: "http", scheme: "bearer", bearerFormat: "JWT" },
